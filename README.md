@@ -1,7 +1,17 @@
 # ATMEGA328P-Digital-Clock
-This is a repository that contains the framework (source code, executables and schematics) for a digital clock for devices with less than 32kb of flash memory such as the ATMEGA328P microcontroller.
+The project aims to create a digital clock using ATMEGA328P microcontroller. The microcontroller is programmed to drive a 7-segment display and a piezo buzzer for the alarm function.
 
-By connecting the microcontroller to a 7 segment clock display and adding a buzzer the following code written in C allows to set a digital clock with an integrated alarm.
+The microcontroller receives input from a real-time clock (RTC) module and uses it to drive the display in real-time. The RTC module is responsible for keeping track of the current time and date.
+
+The clock is displayed on a 4-digit 7-segment display with each digit representing hours, minutes, and seconds. The display is driven using a common cathode connection to the microcontroller.
+
+The piezo buzzer is connected to the microcontroller and is used to signal the alarm function. The alarm function can be set through buttons connected to the microcontroller. The user can set the alarm time and enable/disable the alarm.
+
+The project is powered using a 9V battery or an AC adapter. The microcontroller is programmed using the Arduino IDE and is configured to run on the internal clock of 8 MHz.
+
+The clock design can be customized to include additional features such as temperature and humidity sensors, automatic time synchronization, and Bluetooth connectivity.
+
+Overall, this project provides a simple and low-cost solution for a digital clock with an integrated alarm function that can be used in homes, offices, and other places where an accurate and reliable clock is needed.
 
 | ![image](https://user-images.githubusercontent.com/54071118/224153976-b70c764b-ce43-4973-804a-bf02dffc07dc.png) |
 |:--:| 
@@ -16,7 +26,16 @@ By connecting the microcontroller to a 7 segment clock display and adding a buzz
 | *Schematic configuration using an ATMEGA328P* |
 
 # Final Product
-The electrical system was installed on a small case that was wrapped with a wodeen vinyl and added a charging port and 3 set of buttons to allow us to have a fully functional clock
+We took the project a step further by enclosing the electrical system in a case and adding additional features.
+
+The electrical system is enclosed in a small case that has been wrapped in a wooden vinyl material to give it a natural and warm look. The case measures approximately 10 cm x 10 cm x 3 cm and has a compact and portable design that makes it easy to carry and use in different locations.
+
+The front panel of the case features a 4-digit 7-segment display that shows the current time in hours, minutes, and seconds. The display is bright and clear, making it easy to read even in low-light conditions.
+
+Below the display, there are three sets of buttons that allow the user to interact with the clock and set the time, date, and alarm. The buttons are responsive and easy to use, and provide a tactile feedback when pressed.
+
+On the side of the case, there is a charging port that allows the clock to be powered using a USB cable. This makes it convenient to charge the clock using a computer or a USB adapter.
+
 ![image](https://user-images.githubusercontent.com/54071118/224152350-619f8c39-30bd-4dc9-9587-88467a695c7c.png)
 
 ![image](https://user-images.githubusercontent.com/54071118/224153625-8295aeb0-8cc0-4441-9e7e-26d67ccfcfde.png)
